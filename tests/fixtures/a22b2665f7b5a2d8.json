@@ -1,0 +1,81 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "cancel": "The customer is agreeing to end their subscription or let it lapse.",
+          "refund": "The customer is agreeing to be refunded for a charge already taken.",
+          "upgrade": "The customer is agreeing to move to a larger or more expensive plan."
+        },
+        "instructions": "What is the customer agreeing to in their latest message?",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "history": [
+        {
+          "role": "customer",
+          "text": "We're not using this any more."
+        },
+        {
+          "role": "agent",
+          "text": "I can cancel the subscription at the end of your current term. Would you like me to?"
+        }
+      ],
+      "latest": "yes, go ahead"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "cancel",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 1,
+              "refund": 0,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891271-eYyOiXSxyXnGPDYfxA3y",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.8354e-05,
+          "input_tokens": 437,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "cancel",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 1,
+              "refund": 0,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891277-4Ky9sS23wE40R7TpkhOZ",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.8354e-05,
+          "input_tokens": 437,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    }
+  ]
+}

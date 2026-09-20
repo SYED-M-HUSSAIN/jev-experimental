@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Delivered to the recipient",
+      "reference": "Delivered to the mailroom"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.08,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891177-BbTpxcQnlTe7scokjQXd",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4784e-05,
+          "input_tokens": 352,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.09,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891190-wSgrCn7279GTLQpjAT64",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4784e-05,
+          "input_tokens": 352,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

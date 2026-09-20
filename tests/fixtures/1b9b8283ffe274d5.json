@@ -1,0 +1,89 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "cancel": "The customer is agreeing to end their subscription or let it lapse.",
+          "refund": "The customer is agreeing to be refunded for a charge already taken.",
+          "upgrade": "The customer is agreeing to move to a larger or more expensive plan."
+        },
+        "instructions": "What is the customer agreeing to in their latest message?",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "history": [
+        {
+          "role": "customer",
+          "text": "I want to cancel and get my money back."
+        },
+        {
+          "role": "agent",
+          "text": "Before cancelling — would a refund of this month's charge help, keeping the account open?"
+        },
+        {
+          "role": "customer",
+          "text": "Maybe. What would that look like?"
+        },
+        {
+          "role": "agent",
+          "text": "I'd return the $89 charged on the 3rd and leave your plan running."
+        }
+      ],
+      "latest": "yes, go ahead"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "refund",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 0,
+              "refund": 1,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891272-75GfCJNqCX2KvwkiDelf",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.0958e-05,
+          "input_tokens": 499,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "refund",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 0,
+              "refund": 1,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891278-xg6FPWLuE6Opw4rAlj3S",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.0958e-05,
+          "input_tokens": 499,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    }
+  ]
+}

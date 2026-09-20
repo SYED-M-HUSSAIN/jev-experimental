@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Shortness of breath when active",
+      "reference": "Patient reports difficulty breathing on exertion"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891170-AJnpJO3r3lNJWtvCCepC",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.491e-05,
+          "input_tokens": 355,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891183-pm4fhbMSJdJoHVKJerrs",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.491e-05,
+          "input_tokens": 355,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

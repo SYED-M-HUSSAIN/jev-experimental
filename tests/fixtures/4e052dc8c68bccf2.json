@@ -1,0 +1,67 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "a": {
+        "instructions": "Does the sender want to cancel their subscription?",
+        "type": "noul"
+      },
+      "b": {
+        "instructions": "Does the sender report a billing problem?",
+        "type": "noul"
+      },
+      "c": {
+        "instructions": "Does the sender ask for written confirmation?",
+        "type": "noul"
+      },
+      "d": {
+        "instructions": "Is the sender angry?",
+        "type": "noul"
+      },
+      "e": {
+        "instructions": "Does the message mention a refund amount?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "email": "Please cancel my subscription and confirm in writing. I've already been charged twice."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "a": {
+            "noul": 0.99,
+            "type": "noul"
+          },
+          "b": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "c": {
+            "noul": 0.99,
+            "type": "noul"
+          },
+          "d": {
+            "noul": 0.7,
+            "type": "noul"
+          },
+          "e": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891059-VWO3VPmdfP5fCgGYNTVq",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4868e-05,
+          "input_tokens": 354,
+          "output_tokens": 84
+        }
+      },
+      "status": 200
+    }
+  ]
+}

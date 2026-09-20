@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Login is broken for this account",
+      "reference": "The user can no longer sign in to the dashboard"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.82,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891169-EIIhUTw0ZdYOhw6UO7jt",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4952e-05,
+          "input_tokens": 356,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.83,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891181-g8EApU9PXrgNjjT7CxXn",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4952e-05,
+          "input_tokens": 356,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

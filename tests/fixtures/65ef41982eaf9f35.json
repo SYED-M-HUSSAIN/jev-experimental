@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "The document contradicts it or does not mention it",
+          "true": "The document supports it, allowing for rewording and unit conversion"
+        },
+        "instructions": "Is this claim supported by the document?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "claim": "The seat line comes to 360.00 for eight seats at 45.00 each.",
+      "document": "Invoice INV-2026-00912\n\nIssued 14 October 2026, payable by 13 November 2026. Billed to Harbourline Studios, 22 Fenwick Road, Leeds LS3 1QT, United Kingdom.\n\nLine 1: Growth plan, 8 seats, 1 October to 31 October 2026 — 8 x 45.00 = 360.00.\nLine 2: API overage, 120,000 calls above the included allowance — 96.00.\nLine 3: Onboarding session (2 hours) — 240.00.\n\nSubtotal 696.00. VAT at 20% — 139.20. Total due 835.20 GBP.\nPayment by bank transfer only; card payments are not accepted on this account. Late payment attracts interest at 2% per month on the outstanding balance."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.99,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891458-iHvH8lCllrHYKFAUkAfQ",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4234e-05,
+          "input_tokens": 577,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.99,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891572-Ol6KGMLN1lCHQsrulTbw",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4234e-05,
+          "input_tokens": 577,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

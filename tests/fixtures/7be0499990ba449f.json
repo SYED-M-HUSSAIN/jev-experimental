@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Anything else: praise, a neutral question, a feature request or wish, or dissatisfaction aimed at something other than us (their own systems, another vendor, a past provider)",
+          "true": "Dissatisfaction with our product, service, billing or support"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "I hope you don't mind me raising this, and I do appreciate how busy you must be, but I've now been waiting eleven days for a reply to ticket 4471."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.94,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891326-YyhbD2BMfJM9Jfoazrgn",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5918e-05,
+          "input_tokens": 379,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.94,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891339-xEwJkq70hCCeUEZzfFu0",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5918e-05,
+          "input_tokens": 379,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

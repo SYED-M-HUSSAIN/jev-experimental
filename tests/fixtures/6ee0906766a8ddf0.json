@@ -1,0 +1,61 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "Business-plan tickets get a reply no later than two working days after they are opened.",
+      "docs": [
+        "Support tickets on the Business plan are answered within two business days."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.89,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891254-dHPrhdzBCJpJCTNY3MOj",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4322e-05,
+          "input_tokens": 341,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.89,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891267-xRnrjuQ0tECiWpnHZMh6",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4322e-05,
+          "input_tokens": 341,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

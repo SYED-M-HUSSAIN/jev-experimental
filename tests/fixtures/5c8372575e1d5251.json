@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "The document contradicts it or does not mention it",
+          "true": "The document supports it, allowing for rewording and unit conversion"
+        },
+        "instructions": "Is this claim supported by the document?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "claim": "The scanner can be connected to the network over Ethernet.",
+      "document": "Meridian X2 Desktop Scanner — Technical Specification\n\nThe Meridian X2 is a flatbed document scanner for small offices. It captures at up to 1200 dpi optical resolution and scans a single-sided A4 page in 3.4 seconds in colour. The automatic document feeder holds 50 sheets and supports double-sided capture in one pass. Connection is over USB-C or 2.4 GHz Wi-Fi; there is no wired Ethernet port. The unit weighs 3.2 kg and measures 448 x 300 x 91 mm with the feeder tray closed. Power draw is 18 W while scanning and under 1 W in standby. Supplied software exports to PDF, PDF/A, TIFF and PNG. The scanner ships with a 3 year limited hardware warranty covering manufacturing defects; consumables such as the feeder roller are excluded."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891454-Ve7RH1SCBlyXv1Cs7d7O",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.1882e-05,
+          "input_tokens": 521,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891568-z2tH6GCbpzFrYblC7FZx",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.1882e-05,
+          "input_tokens": 521,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

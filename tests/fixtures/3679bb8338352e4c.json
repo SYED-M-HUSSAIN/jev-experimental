@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "team_0": "Payments, charges, invoices, refunds",
+          "team_1": "Bugs, errors, outages, integrations",
+          "team_2": "Login, password, profile, account settings",
+          "team_3": "Pricing questions, upgrades, new purchases"
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "I was charged twice this month."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "team_0",
+            "confidence": 1,
+            "probabilities": {
+              "team_0": 1,
+              "team_1": 0,
+              "team_2": 0,
+              "team_3": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891101-xranqApeKQHBYi3hOF4G",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5792e-05,
+          "input_tokens": 376,
+          "output_tokens": 55
+        }
+      },
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q0": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.name\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q1": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.contact.name\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q10": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"items[1].description\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q11": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"items[1].qty\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q12": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"items[2].description\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q13": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"tags\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Unordered set of labels.",
+        "type": "noul"
+      },
+      "q14": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"note\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Free text. Judge on facts preserved, not on wording or ordering.",
+        "type": "noul"
+      },
+      "q2": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.contact.phone\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q3": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.billing.address.line1\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q4": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.billing.address.postcode\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q5": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.billing.address.country\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q6": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"shipping.method\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Carrier-service wording may vary.",
+        "type": "noul"
+      },
+      "q7": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"shipping.incoterms\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q8": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"shipping.window.earliest\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q9": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"items[0].description\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "customer.billing.address.country": {
+        "ground_truth": "US",
+        "prediction": "USA"
+      },
+      "customer.billing.address.line1": {
+        "ground_truth": "88 Quay Street",
+        "prediction": "88 Quay St."
+      },
+      "customer.billing.address.postcode": {
+        "ground_truth": "97204",
+        "prediction": "97205"
+      },
+      "customer.contact.name": {
+        "ground_truth": "J. Ramirez",
+        "prediction": "Ramirez, J."
+      },
+      "customer.contact.phone": {
+        "ground_truth": "+1-555-0142",
+        "prediction": "+1 555 0142"
+      },
+      "customer.name": {
+        "ground_truth": "Blue Harbor Supply Co.",
+        "prediction": "Blue Harbor Supply Company"
+      },
+      "items[0].description": {
+        "ground_truth": "Mechanical keyboard, tenkeyless",
+        "prediction": "Tenkeyless mechanical keyboard"
+      },
+      "items[1].description": {
+        "ground_truth": "27-inch monitor, 1440p",
+        "prediction": "27\" monitor (1440p)"
+      },
+      "items[1].qty": {
+        "ground_truth": 4,
+        "prediction": 5
+      },
+      "items[2].description": {
+        "ground_truth": "Docking station, dual USB-C",
+        "prediction": "Dual USB-C docking station"
+      },
+      "note": {
+        "ground_truth": "Deliver to the loading dock at the rear of the building; the front entrance has no step-free access. Call the contact 30 minutes before arrival.",
+        "prediction": "Use the rear loading dock — there is no step-free access at the front. Phone the contact half an hour before you arrive."
+      },
+      "shipping.incoterms": {
+        "ground_truth": "DAP",
+        "prediction": "DAP (Delivered at Place)"
+      },
+      "shipping.method": {
+        "ground_truth": "ground",
+        "prediction": "ground freight"
+      },
+      "shipping.window.earliest": {
+        "ground_truth": "2026-11-09",
+        "prediction": "2026-11-10"
+      },
+      "tags": {
+        "ground_truth": [
+          "priority",
+          "contract-pricing",
+          "partial-ship-ok"
+        ],
+        "prediction": [
+          "partial-ship-ok",
+          "priority",
+          "contract-pricing"
+        ]
+      }
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.84,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q10": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q11": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q12": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q13": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q14": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.82,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q9": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891461-sjMxLtpsJAQMA306CKFV",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 8.967e-05,
+          "input_tokens": 2135,
+          "output_tokens": 264
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.82,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q10": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q11": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q12": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q13": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q14": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.82,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q9": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891462-acdCU1m46fC5TkxwLrzu",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 8.967e-05,
+          "input_tokens": 2135,
+          "output_tokens": 264
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.86,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q10": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q11": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q12": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q13": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q14": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.77,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q9": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891574-ATiM1aBiJ9r34VPyJ4wl",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 8.967e-05,
+          "input_tokens": 2135,
+          "output_tokens": 264
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.85,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q10": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q11": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q12": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q13": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q14": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.81,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.02,
+            "type": "noul"
+          },
+          "q9": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891575-leutNhriLko1w5Vv1kkh",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 8.967e-05,
+          "input_tokens": 2135,
+          "output_tokens": 264
+        }
+      },
+      "status": 200
+    }
+  ]
+}

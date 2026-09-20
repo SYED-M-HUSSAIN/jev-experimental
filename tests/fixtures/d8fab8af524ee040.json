@@ -1,0 +1,77 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "m0": {
+        "criteria": {
+          "none": "None of the allowed values means the same thing",
+          "v0": "pending",
+          "v1": "approved",
+          "v2": "rejected",
+          "v3": "cancelled"
+        },
+        "instructions": "The value at \"status\" should have been one of the allowed options but isn't. Which allowed option has the same meaning as this value? Pick \"none\" if it is unrelated, ambiguous between several options, or broader/narrower than any single option.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "status": "closed"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "none",
+            "confidence": 0.56,
+            "probabilities": {
+              "none": 0.65,
+              "v0": 0,
+              "v1": 0.01,
+              "v2": 0.06,
+              "v3": 0.28
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891475-R5OOxR82WiaqfXsVhMBF",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7346e-05,
+          "input_tokens": 413,
+          "output_tokens": 57
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "none",
+            "confidence": 0.49,
+            "probabilities": {
+              "none": 0.59,
+              "v0": 0,
+              "v1": 0.01,
+              "v2": 0.05,
+              "v3": 0.35
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891586-Oz4NtSGoQ0czRXgn2GrT",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7346e-05,
+          "input_tokens": 413,
+          "output_tokens": 57
+        }
+      },
+      "status": 200
+    }
+  ]
+}

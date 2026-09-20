@@ -1,0 +1,35 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "a": {
+        "instructions": "Does the sender want to cancel their subscription?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "email": "Please cancel my subscription and confirm in writing. I've already been charged twice."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "a": {
+            "noul": 0.99,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891058-Z1VPyGjMPDHrINBh7TD9",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2474e-05,
+          "input_tokens": 297,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

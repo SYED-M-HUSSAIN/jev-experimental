@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "This contract is terminable at will on a month's notice",
+      "reference": "Either party may end this agreement with 30 days' notice"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.86,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891171-DBtlvuNQy5giDzukv9LQ",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5372e-05,
+          "input_tokens": 366,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.87,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891184-qVsFR7Fer8yyk8eJSujl",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5372e-05,
+          "input_tokens": 366,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

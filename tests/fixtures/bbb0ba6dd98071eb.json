@@ -1,0 +1,24 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "amount": {
+        "instructions": "Extract the invoice total",
+        "type": "string"
+      }
+    },
+    "state": "Invoice #4521 from a supplier, total $1,250.00, due Oct 3."
+  },
+  "responses": [
+    {
+      "body": {
+        "error": {
+          "code": 400,
+          "message": "[\n  {\n    \"code\": \"invalid_union\",\n    \"errors\": [],\n    \"note\": \"No matching discriminator\",\n    \"discriminator\": \"type\",\n    \"options\": [\n      \"noul\",\n      \"choice\",\n      \"score\"\n    ],\n    \"path\": [\n      \"questions\",\n      \"amount\",\n      \"type\"\n    ],\n    \"message\": \"Invalid discriminator value. Expected 'noul' | 'choice' | 'score'\"\n  }\n]"
+        },
+        "user_id": "user_3HibdglRFbfpBRpatUNSezZgIKt"
+      },
+      "status": 400
+    }
+  ]
+}

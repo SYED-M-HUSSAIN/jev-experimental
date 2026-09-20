@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Refund requested",
+      "reference": "Customer wants their money back"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.95,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891168-9QDCY8Z8OLqPQ1gdPWk8",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4616e-05,
+          "input_tokens": 348,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.95,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891181-nrhQxJbA9us0EfYc6h8z",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4616e-05,
+          "input_tokens": 348,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

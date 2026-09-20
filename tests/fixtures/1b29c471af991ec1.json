@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Love that the app logs me out mid-form. Really great use of my afternoon."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891248-KaucwlcrLJQK1aKVtiNL",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.302e-05,
+          "input_tokens": 310,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891262-18Wmmo3fbfzPDDEbc2wk",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.302e-05,
+          "input_tokens": 310,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

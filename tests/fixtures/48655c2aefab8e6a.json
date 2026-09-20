@@ -1,0 +1,81 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "cancel": "The customer is agreeing to end their subscription or let it lapse.",
+          "refund": "The customer is agreeing to be refunded for a charge already taken.",
+          "upgrade": "The customer is agreeing to move to a larger or more expensive plan."
+        },
+        "instructions": "What is the customer agreeing to in their latest message?",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "history": [
+        {
+          "role": "customer",
+          "text": "Can I get a refund for the last three months?"
+        },
+        {
+          "role": "agent",
+          "text": "Refunds only cover the current billing period, so I can't return those three months. What I can do is cancel the renewal so you're not charged again — shall I do that?"
+        }
+      ],
+      "latest": "yes, go ahead"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "cancel",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 1,
+              "refund": 0,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891273-8MQTk82fb9lX44kosXhX",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9278e-05,
+          "input_tokens": 459,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "cancel",
+            "confidence": 1,
+            "probabilities": {
+              "cancel": 1,
+              "refund": 0,
+              "upgrade": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891279-PxENBXM17rg4A47Sas7F",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9278e-05,
+          "input_tokens": 459,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "account": "Logins, passwords, SSO, seats, permissions and closing or merging accounts.",
+          "billing": "Invoices, payment methods, refunds, plan pricing, tax and dunning.",
+          "sales": "Pre-purchase questions, quotes, plan comparisons, upgrades and contract terms.",
+          "technical": "Bugs, errors, outages, integrations, API problems and anything that is broken."
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "We're 40 people and evaluating you against two other tools. Can we get a quote?"
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "sales",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 1,
+              "technical": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891257-8WctRRP1rho6ALafXRwE",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7556e-05,
+          "input_tokens": 418,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "sales",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 1,
+              "technical": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891334-EtbpsiTrfsPJlnl88Joz",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7556e-05,
+          "input_tokens": 418,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    }
+  ]
+}

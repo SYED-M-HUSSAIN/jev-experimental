@@ -1,0 +1,113 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Not a complaint",
+          "true": "A complaint"
+        },
+        "instructions": "Does this message express a complaint about the product or service?",
+        "type": "noul"
+      }
+    },
+    "state": "I'm not angry, just disappointed that the feature I paid for still doesn't work."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891090-D1oYRXU698JTzJ7lsaiw",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3314e-05,
+          "input_tokens": 317,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.98,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891091-eBAqZYgvqa8dDomUH7hd",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3314e-05,
+          "input_tokens": 317,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.98,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891091-fKtvQqGotFBu5iJRhjvz",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3314e-05,
+          "input_tokens": 317,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891092-nxsLBeNOQoPh11UrkjXG",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3314e-05,
+          "input_tokens": 317,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.98,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891092-vsEP4uHJDWXPxhwegEcc",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3314e-05,
+          "input_tokens": 317,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

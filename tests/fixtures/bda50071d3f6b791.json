@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Just wanted to say the new scheduling view is excellent. Thanks."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891247-FBUK1zLrGMBzqaJBSQdA",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2852e-05,
+          "input_tokens": 306,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891261-sXEVxETyWZc0d5MqE1Zs",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2852e-05,
+          "input_tokens": 306,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

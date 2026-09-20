@@ -1,0 +1,69 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Needs human review",
+          "true": "Policy allows auto-approval"
+        },
+        "instructions": "Under the stated policy and this customer's history, can this refund be auto-approved?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "customer": {
+        "account_flags": [],
+        "amount_usd": 288,
+        "days_since_purchase": 62,
+        "prior_refunds_12mo": 0
+      },
+      "policy": {
+        "auto_approve_limit_usd": 500,
+        "auto_approve_requires_clean_history": true,
+        "refund_window_days": 30
+      },
+      "request": "I bought the annual plan last week and it isn't what I expected. I'd like a refund."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.06,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891269-NRyyD9eRV4pGN7s9VZUv",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7598e-05,
+          "input_tokens": 419,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.07,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891274-qNzDmGLuD8WwJAbhFWkS",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7598e-05,
+          "input_tokens": 419,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

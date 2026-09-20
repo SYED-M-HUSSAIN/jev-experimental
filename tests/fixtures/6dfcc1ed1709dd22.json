@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Anything else: praise, a neutral question, a feature request or wish, or dissatisfaction aimed at something other than us (their own systems, another vendor, a past provider)",
+          "true": "Dissatisfaction with our product, service, billing or support"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "My old provider was terrible, which is why I switched to you. Night and day."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.02,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891325-3UuAwY4OKlwvp8V7RIOb",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5036e-05,
+          "input_tokens": 358,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.02,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891339-csH4qAPUaKLCTbCTftAs",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5036e-05,
+          "input_tokens": 358,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

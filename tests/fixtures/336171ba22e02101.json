@@ -1,0 +1,81 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q0": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"job_title\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q1": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"source\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "job_title": {
+        "ground_truth": "Head of Operations",
+        "prediction": "Operations Lead"
+      },
+      "source": {
+        "ground_truth": "webinar",
+        "prediction": "Webinar signup"
+      }
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.32,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.32,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891462-79fKFOxOTOFXjohSmK7U",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9908e-05,
+          "input_tokens": 474,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.3,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.35,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891475-xpmrXbEYhaBOQ6C3BPHm",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9908e-05,
+          "input_tokens": 474,
+          "output_tokens": 38
+        }
+      },
+      "status": 200
+    }
+  ]
+}

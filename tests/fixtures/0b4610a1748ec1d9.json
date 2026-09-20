@@ -1,0 +1,72 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "account": "Logins, passwords, SSO, seats, permissions and closing or merging accounts.",
+          "billing": "Invoices, payment methods, refunds, plan pricing, tax and dunning.",
+          "sales": "Pre-purchase questions, quotes, plan comparisons, upgrades and contract terms.",
+          "technical": "Bugs, errors, outages, integrations, API problems and anything that is broken."
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "I can't download my invoice because our Okta SSO login loops back to the sign-in screen."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "account",
+            "confidence": 0.97,
+            "probabilities": {
+              "account": 0.98,
+              "billing": 0,
+              "sales": 0,
+              "technical": 0.02
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891258-pPcZ2n1WqvjjemYDgNtC",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7598e-05,
+          "input_tokens": 419,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "account",
+            "confidence": 0.96,
+            "probabilities": {
+              "account": 0.97,
+              "billing": 0,
+              "sales": 0,
+              "technical": 0.03
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891335-5lpfYVlo8yqEOUGzOBIK",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7598e-05,
+          "input_tokens": 419,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "The account is in arrears",
+      "reference": "Invoice remains unpaid past its due date"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.78,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891173-59xxEyqlxwVU0csHbhVp",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4826e-05,
+          "input_tokens": 353,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.77,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891186-W6qLBQtrttwbVWNXtQ8W",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4826e-05,
+          "input_tokens": 353,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

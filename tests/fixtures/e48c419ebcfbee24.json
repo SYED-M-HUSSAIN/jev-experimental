@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "team_0": "Payments, charges, invoices, refunds",
+          "team_1": "Bugs, errors, outages, integrations",
+          "team_2": "Login, password, profile, account settings",
+          "team_3": "Pricing questions, upgrades, new purchases"
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "Do you offer discounts for teams of 50+?"
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "team_3",
+            "confidence": 1,
+            "probabilities": {
+              "team_0": 0,
+              "team_1": 0,
+              "team_2": 0,
+              "team_3": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891102-MCpmeppEZc3aBdHdMBE7",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.6002e-05,
+          "input_tokens": 381,
+          "output_tokens": 55
+        }
+      },
+      "status": 200
+    }
+  ]
+}

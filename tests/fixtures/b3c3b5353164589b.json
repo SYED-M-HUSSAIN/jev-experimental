@@ -1,0 +1,72 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "account": "Login, password, profile, account settings",
+          "billing": "Payments, charges, invoices, refunds",
+          "sales": "Pricing questions, upgrades, new purchases",
+          "technical": "Bugs, errors, outages, integrations"
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "The API returns 500 errors on every POST request."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "technical",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 0,
+              "technical": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891096-n15wxCuZluYSYZyBbnT2",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5708e-05,
+          "input_tokens": 374,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "technical",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 0,
+              "technical": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891097-6QNQPMnbIIlCXWM8i01V",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5708e-05,
+          "input_tokens": 374,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Hi! Quick question — where do I find my invoices in the new UI?"
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.05,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891247-NkGVlyuQTxQUL0zW3owp",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2978e-05,
+          "input_tokens": 309,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.05,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891260-qEr0rfI8ZlBO0WX9g1A0",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2978e-05,
+          "input_tokens": 309,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

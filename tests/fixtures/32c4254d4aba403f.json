@@ -1,0 +1,122 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "contradicted": "The document states something different",
+          "not_mentioned": "The document does not address this at all",
+          "supported": "The document states this, or it follows directly from what the document states"
+        },
+        "instructions": "Judge the claim against the document only. Wording may differ and simple unit conversions are fine; a different number, date or fact is a contradiction.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "claim": "The document feeder takes 50 sheets.",
+      "document": "Meridian X2 Desktop Scanner — Technical Specification\n\nThe Meridian X2 is a flatbed document scanner for small offices. It captures at up to 1200 dpi optical resolution and scans a single-sided A4 page in 3.4 seconds in colour. The automatic document feeder holds 50 sheets and supports double-sided capture in one pass. Connection is over USB-C or 2.4 GHz Wi-Fi; there is no wired Ethernet port. The unit weighs 3.2 kg and measures 448 x 300 x 91 mm with the feeder tray closed. Power draw is 18 W while scanning and under 1 W in standby. Supplied software exports to PDF, PDF/A, TIFF and PNG. The scanner ships with a 3 year limited hardware warranty covering manufacturing defects; consumables such as the feeder roller are excluded."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "supported",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 0,
+              "supported": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891434-1Dde3bMEsVSIQEL8Ihug",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4276e-05,
+          "input_tokens": 578,
+          "output_tokens": 44
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "supported",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 0,
+              "supported": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891444-Y8c5NTpxAlmEX0VnnDmf",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4276e-05,
+          "input_tokens": 578,
+          "output_tokens": 44
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "supported",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 0,
+              "supported": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891551-3yolBxttJ560K2P6cKkG",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4276e-05,
+          "input_tokens": 578,
+          "output_tokens": 44
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "supported",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 0,
+              "supported": 1
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891559-My56l7lD60oO7PQScL9f",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.4276e-05,
+          "input_tokens": 578,
+          "output_tokens": 44
+        }
+      },
+      "status": 200
+    }
+  ]
+}

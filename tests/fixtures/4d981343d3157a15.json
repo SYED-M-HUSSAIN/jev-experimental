@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "The document contradicts it or does not mention it",
+          "true": "The document supports it, allowing for rewording and unit conversion"
+        },
+        "instructions": "Is this claim supported by the document?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "claim": "Cancelling mid-month does not produce a partial refund; access continues to the period end.",
+      "document": "Refunds and Cancellations\n\nYou may cancel a subscription at any time from the Billing page. Cancellation takes effect at the end of the current billing period, and the service remains fully available until then. We do not pro-rate partial months. New customers on an annual plan may request a full refund within 30 days of their first payment; after day 30, annual plans are non-refundable. Monthly plans are not eligible for refunds at any point, though we will review billing errors on request. Refunds are returned to the original payment method and typically appear within 5 to 10 business days. Usage-based overage charges are billed in arrears and cannot be refunded once the usage has been incurred."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.96,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891457-dP8A6UzezaB2b6ldnLrq",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.079e-05,
+          "input_tokens": 495,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.96,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891570-0UBzyxrc1W0Z9B0pHSCo",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.079e-05,
+          "input_tokens": 495,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

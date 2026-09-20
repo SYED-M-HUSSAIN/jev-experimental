@@ -1,0 +1,61 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "Data is encrypted at rest with AES-256, and the service is SOC 2 certified.",
+      "docs": [
+        "All data is encrypted at rest using AES-256 and in transit using TLS 1.3."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.04,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891253-bVKqxOESGisypdJM2646",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4868e-05,
+          "input_tokens": 354,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.04,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891266-52R6JQlerVDuAgZUtrT8",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4868e-05,
+          "input_tokens": 354,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

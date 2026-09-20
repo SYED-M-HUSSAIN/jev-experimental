@@ -1,0 +1,62 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "Paying annually for one Pro user costs $288 for the year.",
+      "docs": [
+        "The Pro plan is billed at $30 per user per month.",
+        "Customers who pay annually receive a 20% discount off the monthly rate."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.93,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891252-1wWZEzcmFRIymPTY0aqB",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.512e-05,
+          "input_tokens": 360,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.93,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891265-XzTI4Abm3qFAcYMY6kuA",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.512e-05,
+          "input_tokens": 360,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

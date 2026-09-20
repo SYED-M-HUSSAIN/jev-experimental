@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Payment due after delivery",
+      "reference": "Payment due before delivery"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891175-OJgQDY6jFvCwMDVJoUta",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4616e-05,
+          "input_tokens": 348,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891188-bYSyfX6gy2FyIDD4uCLb",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4616e-05,
+          "input_tokens": 348,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

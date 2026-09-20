@@ -1,0 +1,61 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "Starter comes with 5 seats.",
+      "docs": [
+        "The Starter plan includes 3 seats and 10 GB of storage."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.02,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891252-2C7BI54mOKLFhpJKzKFj",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4028e-05,
+          "input_tokens": 334,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.02,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891265-wLz26dpkt7kmg3oMqkNw",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4028e-05,
+          "input_tokens": 334,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

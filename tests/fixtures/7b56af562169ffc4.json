@@ -1,0 +1,77 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "m0": {
+        "criteria": {
+          "none": "None of the allowed values means the same thing",
+          "v0": "Electronics: Powered hardware and accessories for it: computers, peripherals, displays, cables.",
+          "v1": "Software: Licences and subscriptions for programs and online services.",
+          "v2": "Furniture: Desks, chairs, storage and other physical office fittings.",
+          "v3": "Services: Labour billed by people: consulting, installation, training, support contracts."
+        },
+        "instructions": "The value at \"category\" should have been one of the allowed options but isn't. Which allowed option has the same meaning as this value? Pick \"none\" if it is unrelated, ambiguous between several options, or broader/narrower than any single option.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "category": "Office seating"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v2",
+            "confidence": 0.91,
+            "probabilities": {
+              "none": 0.07,
+              "v0": 0,
+              "v1": 0,
+              "v2": 0.93,
+              "v3": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891465-OPjRzHqQxRUdNhCg4EVf",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9698e-05,
+          "input_tokens": 469,
+          "output_tokens": 58
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v2",
+            "confidence": 0.94,
+            "probabilities": {
+              "none": 0.04,
+              "v0": 0,
+              "v1": 0,
+              "v2": 0.96,
+              "v3": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891577-2OQ8devOX1dk3CehMt2t",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.9698e-05,
+          "input_tokens": 469,
+          "output_tokens": 58
+        }
+      },
+      "status": 200
+    }
+  ]
+}

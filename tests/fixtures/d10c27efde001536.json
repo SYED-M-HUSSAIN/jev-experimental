@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Would be nice if reports could be exported to CSV. Copy-pasting is a pain."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.79,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891251-bPQB27sd1Qp6IY807TGa",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3104e-05,
+          "input_tokens": 312,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.79,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891264-6gr2efht6VJ3JkW4XXuI",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3104e-05,
+          "input_tokens": 312,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

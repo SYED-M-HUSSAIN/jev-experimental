@@ -1,0 +1,72 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "account": "Login, password, profile, account settings",
+          "billing": "Payments, charges, invoices, refunds",
+          "sales": "Pricing questions, upgrades, new purchases",
+          "technical": "Bugs, errors, outages, integrations"
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "I can't reset my password, the email never arrives."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "account",
+            "confidence": 1,
+            "probabilities": {
+              "account": 1,
+              "billing": 0,
+              "sales": 0,
+              "technical": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891097-6xYTFVgji2Qq2VTJwbsx",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5666e-05,
+          "input_tokens": 373,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "account",
+            "confidence": 0.99,
+            "probabilities": {
+              "account": 0.99,
+              "billing": 0,
+              "sales": 0,
+              "technical": 0.01
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891098-RDQklhRi3vcgczddmQM9",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.5666e-05,
+          "input_tokens": 373,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[project]
+name = "jev-experiments"
+version = "0.1.0"
+description = "What TypeSafe's Jev model can and cannot do, as a runnable test suite"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jev_experiments"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+markers = [
+    "live: hits the real API; skipped unless JEV_MODE=record or JEV_MODE=live",
+]
+addopts = "-q --strict-markers"

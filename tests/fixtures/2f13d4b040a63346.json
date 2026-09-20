@@ -1,0 +1,272 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q0": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"issue_date\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q1": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"currency\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q2": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.name\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Casing and legal-entity suffixes (Ltd/Inc/Corp.) are cosmetic.",
+        "type": "noul"
+      },
+      "q3": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"customer.tax_id\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. A leading country code may be omitted; the number itself must match.",
+        "type": "noul"
+      },
+      "q4": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"subtotal\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Numeric fields may arrive as formatted currency strings.",
+        "type": "noul"
+      },
+      "q5": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"tax_rate\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. A percentage string and a decimal fraction are the same value.",
+        "type": "noul"
+      },
+      "q6": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"total\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch. Numeric fields may arrive as formatted currency strings.",
+        "type": "noul"
+      },
+      "q7": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"line_items[0].description\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      },
+      "q8": {
+        "criteria": {
+          "false": "Different or incorrect information",
+          "true": "Same information"
+        },
+        "instructions": "For field \"line_items[0].amount\", does the prediction convey the same information as the ground_truth? Ignore formatting, casing, abbreviations, list order and equivalent units or date formats; any difference in the actual value, name, quantity or meaning is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "currency": {
+        "ground_truth": "USD",
+        "prediction": "$"
+      },
+      "customer.name": {
+        "ground_truth": "Acme Corporation",
+        "prediction": "ACME Corp."
+      },
+      "customer.tax_id": {
+        "ground_truth": "US 47-1234567",
+        "prediction": "47-1234567"
+      },
+      "issue_date": {
+        "ground_truth": "2026-10-03",
+        "prediction": "October 3rd, 2026"
+      },
+      "line_items[0].amount": {
+        "ground_truth": 1250,
+        "prediction": "$1,250.00"
+      },
+      "line_items[0].description": {
+        "ground_truth": "Annual platform licence",
+        "prediction": "Annual platform license"
+      },
+      "subtotal": {
+        "ground_truth": 1250,
+        "prediction": "$1,250.00"
+      },
+      "tax_rate": {
+        "ground_truth": 0.2,
+        "prediction": "17.5%"
+      },
+      "total": {
+        "ground_truth": 1500,
+        "prediction": "$1,500.00"
+      }
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.86,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.03,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.82,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891574-K7HcNXG2o9PxNix31XLC",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 5.733e-05,
+          "input_tokens": 1365,
+          "output_tokens": 157
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.89,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.96,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.03,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.84,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891576-wXFVMaV41lfl7ifzEPRt",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 5.733e-05,
+          "input_tokens": 1365,
+          "output_tokens": 157
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q0": {
+            "noul": 0.99,
+            "type": "noul"
+          },
+          "q1": {
+            "noul": 0.91,
+            "type": "noul"
+          },
+          "q2": {
+            "noul": 0.95,
+            "type": "noul"
+          },
+          "q3": {
+            "noul": 0.97,
+            "type": "noul"
+          },
+          "q4": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q5": {
+            "noul": 0.03,
+            "type": "noul"
+          },
+          "q6": {
+            "noul": 0.98,
+            "type": "noul"
+          },
+          "q7": {
+            "noul": 0.81,
+            "type": "noul"
+          },
+          "q8": {
+            "noul": 0.97,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891586-QD96U9CzYWC7Mq2iEwlZ",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 5.733e-05,
+          "input_tokens": 1365,
+          "output_tokens": 157
+        }
+      },
+      "status": 200
+    }
+  ]
+}

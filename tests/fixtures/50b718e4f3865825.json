@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Our internal VPN is awful and keeps dropping — is there a way to allowlist your IPs?"
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.71,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891250-rCmVucMfwf2ELrJi2rAp",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3188e-05,
+          "input_tokens": 314,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.75,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891263-C9awhEnssHK1Y1ACAxCO",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.3188e-05,
+          "input_tokens": 314,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

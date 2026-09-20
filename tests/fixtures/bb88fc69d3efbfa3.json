@@ -1,0 +1,77 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "m0": {
+        "criteria": {
+          "none": "None of the allowed values means the same thing",
+          "v0": "pending",
+          "v1": "approved",
+          "v2": "rejected",
+          "v3": "cancelled"
+        },
+        "instructions": "The value at \"status\" should have been one of the allowed options but isn't. Which allowed option has the same meaning as this value? Pick \"none\" if it is unrelated, ambiguous between several options, or broader/narrower than any single option.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "status": "declined"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v2",
+            "confidence": 0.96,
+            "probabilities": {
+              "none": 0.03,
+              "v0": 0,
+              "v1": 0,
+              "v2": 0.97,
+              "v3": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891473-v5HVUgFBoekUhLK7KsNO",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7388e-05,
+          "input_tokens": 414,
+          "output_tokens": 58
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v2",
+            "confidence": 0.96,
+            "probabilities": {
+              "none": 0.03,
+              "v0": 0,
+              "v1": 0,
+              "v2": 0.97,
+              "v3": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891585-hw9PLz7xAdkIXqj6Qi7D",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7388e-05,
+          "input_tokens": 414,
+          "output_tokens": 58
+        }
+      },
+      "status": 200
+    }
+  ]
+}

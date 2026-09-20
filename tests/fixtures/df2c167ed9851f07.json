@@ -1,0 +1,62 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "A claim contradicts the documents, is not stated in them, or the arithmetic is wrong",
+          "true": "Every claim follows from the documents, including any arithmetic"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "You can get a refund within 30 days, including on overage charges.",
+      "docs": [
+        "Refunds are available within 30 days of purchase.",
+        "Refunds are not available on usage-based overage charges."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891331-4Hlp4PqmDjJ5XSlHMWmf",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.6044e-05,
+          "input_tokens": 382,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891344-zOOjDa4F1z19N9jCjYq6",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.6044e-05,
+          "input_tokens": 382,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

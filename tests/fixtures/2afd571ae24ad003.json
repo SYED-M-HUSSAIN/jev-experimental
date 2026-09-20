@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "The licence may not be transferred without written consent",
+      "reference": "The licence may be transferred with written consent"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.87,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891176-tEGw1mU3tD427hSUq6Zz",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4994e-05,
+          "input_tokens": 357,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.88,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891189-Jt7r2fvSO6t7OZvAt1l3",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4994e-05,
+          "input_tokens": 357,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

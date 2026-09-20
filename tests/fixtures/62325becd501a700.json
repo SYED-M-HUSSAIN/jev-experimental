@@ -1,0 +1,72 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "account": "Logins, passwords, SSO, seats, permissions and closing or merging accounts.",
+          "billing": "Invoices, payment methods, refunds, plan pricing, tax and dunning.",
+          "sales": "Pre-purchase questions, quotes, plan comparisons, upgrades and contract terms.",
+          "technical": "Bugs, errors, outages, integrations, API problems and anything that is broken."
+        },
+        "instructions": "Which team should handle this ticket?",
+        "type": "choice"
+      }
+    },
+    "state": "I reset my password fine, thanks. What I actually want to know is what the Enterprise tier adds over Pro."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "sales",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 1,
+              "technical": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891258-ewTYnpToWnoybg02o3XA",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7682e-05,
+          "input_tokens": 421,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "sales",
+            "confidence": 1,
+            "probabilities": {
+              "account": 0,
+              "billing": 0,
+              "sales": 1,
+              "technical": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891335-hogPco1JP4dKSlVlyEtm",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7682e-05,
+          "input_tokens": 421,
+          "output_tokens": 45
+        }
+      },
+      "status": 200
+    }
+  ]
+}

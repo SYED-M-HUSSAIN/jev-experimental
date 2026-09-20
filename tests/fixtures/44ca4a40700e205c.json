@@ -1,0 +1,80 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "m0": {
+        "criteria": {
+          "none": "None of the allowed values means the same thing",
+          "v0": "Engineering",
+          "v1": "Sales",
+          "v2": "Finance",
+          "v3": "HR",
+          "v4": "Operations"
+        },
+        "instructions": "The value at \"department\" should have been one of the allowed options but isn't. Which allowed option has the same meaning as this value? Pick \"none\" if it is unrelated, ambiguous between several options, or broader/narrower than any single option.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "department": "Account executives"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v1",
+            "confidence": 0.92,
+            "probabilities": {
+              "none": 0.06,
+              "v0": 0,
+              "v1": 0.94,
+              "v2": 0,
+              "v3": 0,
+              "v4": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891470-NthPFhmFy4TmbmWc17wz",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7766e-05,
+          "input_tokens": 423,
+          "output_tokens": 66
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "m0": {
+            "choice": "v1",
+            "confidence": 0.9,
+            "probabilities": {
+              "none": 0.08,
+              "v0": 0,
+              "v1": 0.92,
+              "v2": 0,
+              "v3": 0,
+              "v4": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891582-MuR7ZksJHuAuvkDZxkhs",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.7766e-05,
+          "input_tokens": 423,
+          "output_tokens": 66
+        }
+      },
+      "status": 200
+    }
+  ]
+}

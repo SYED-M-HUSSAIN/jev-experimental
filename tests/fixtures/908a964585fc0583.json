@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "The supplier may provide monthly reports",
+      "reference": "The supplier shall provide monthly reports"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891176-s0ZdiJIihOXiFRwATfuF",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4784e-05,
+          "input_tokens": 352,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891189-l2pCfqxZy39YGvLSDf0c",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4784e-05,
+          "input_tokens": 352,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

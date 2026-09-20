@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "Discount applies from the first year onward",
+      "reference": "Discount applies to the first year only"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891178-wx4HggymRr9Kiwf5Hgjr",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4868e-05,
+          "input_tokens": 354,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.03,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891191-3BJRYr3N97IGBT9nOxFk",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4868e-05,
+          "input_tokens": 354,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

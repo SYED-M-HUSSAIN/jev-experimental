@@ -1,0 +1,61 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Is every claim in the answer supported by the supplied documents?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "answer": "The docs list Chrome, Firefox and Safari; they do not say whether a mobile app exists.",
+      "docs": [
+        "The web application supports Chrome, Firefox and Safari."
+      ]
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.86,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891255-SipHbwlhEcvqXvga1vGC",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.428e-05,
+          "input_tokens": 340,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.85,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891268-Q5MwaUzGHx2LrshuXp6T",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.428e-05,
+          "input_tokens": 340,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

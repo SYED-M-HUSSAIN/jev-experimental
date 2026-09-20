@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "History of diabetes",
+      "reference": "No history of diabetes"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891180-N5wWoMFyRo1jsc3ibOlB",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4574e-05,
+          "input_tokens": 347,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.01,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891192-7jwsqW7WAUicwxcpyKtS",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4574e-05,
+          "input_tokens": 347,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

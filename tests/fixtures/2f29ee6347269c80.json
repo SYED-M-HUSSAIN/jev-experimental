@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Anything else: praise, a neutral question, a feature request or wish, or dissatisfaction aimed at something other than us (their own systems, another vendor, a past provider)",
+          "true": "Dissatisfaction with our product, service, billing or support"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Not complaining at all, just curious — why did my bill jump from $49 to $89 without any notice? Seems like a lot."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.73,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891325-OI0932SAPKHhmF5xBx2Z",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.554e-05,
+          "input_tokens": 370,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.74,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891338-WxLys0lZLFNhj3V6p4MN",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.554e-05,
+          "input_tokens": 370,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

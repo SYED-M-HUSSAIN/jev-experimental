@@ -1,0 +1,122 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "contradicted": "The document states something different",
+          "not_mentioned": "The document does not address this at all",
+          "supported": "The document states this, or it follows directly from what the document states"
+        },
+        "instructions": "Judge the claim against the document only. Wording may differ and simple unit conversions are fine; a different number, date or fact is a contradiction.",
+        "type": "choice"
+      }
+    },
+    "state": {
+      "claim": "Only the account owner may cancel the subscription.",
+      "document": "Refunds and Cancellations\n\nYou may cancel a subscription at any time from the Billing page. Cancellation takes effect at the end of the current billing period, and the service remains fully available until then. We do not pro-rate partial months. New customers on an annual plan may request a full refund within 30 days of their first payment; after day 30, annual plans are non-refundable. Monthly plans are not eligible for refunds at any point, though we will review billing errors on request. Refunds are returned to the original payment method and typically appear within 5 to 10 business days. Usage-based overage charges are billed in arrears and cannot be refunded once the usage has been incurred."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "not_mentioned",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 1,
+              "supported": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891440-GEpxbLhgxlXy3P8zrlru",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.2848e-05,
+          "input_tokens": 544,
+          "output_tokens": 47
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "not_mentioned",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 1,
+              "supported": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891449-vN3Cqq65rUWPygWOR0H6",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.2848e-05,
+          "input_tokens": 544,
+          "output_tokens": 47
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "not_mentioned",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 1,
+              "supported": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891556-80CD5JyTIu0X6rrt5jTv",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.2848e-05,
+          "input_tokens": 544,
+          "output_tokens": 47
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "choice": "not_mentioned",
+            "confidence": 1,
+            "probabilities": {
+              "contradicted": 0,
+              "not_mentioned": 1,
+              "supported": 0
+            },
+            "type": "choice"
+          }
+        },
+        "id": "gen-dec-1789891563-U2AdPWBUX7KboegENtMv",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.2848e-05,
+          "input_tokens": 544,
+          "output_tokens": 47
+        }
+      },
+      "status": 200
+    }
+  ]
+}

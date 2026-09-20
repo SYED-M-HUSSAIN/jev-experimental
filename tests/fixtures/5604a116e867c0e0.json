@@ -1,0 +1,56 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "No",
+          "true": "Yes"
+        },
+        "instructions": "Does this message express a complaint about us?",
+        "type": "noul"
+      }
+    },
+    "state": "Third time this week the export has failed. This is getting ridiculous."
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.75,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891246-QCdAGKButoZyv9bFQmBb",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2894e-05,
+          "input_tokens": 307,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.75,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891259-PDlZUyziYyKIMRigL0pa",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.2894e-05,
+          "input_tokens": 307,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

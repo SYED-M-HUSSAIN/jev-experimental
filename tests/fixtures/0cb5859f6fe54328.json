@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "Different meaning",
+          "true": "Same meaning"
+        },
+        "instructions": "Does `candidate` convey the same meaning as `reference`? Wording, word order and phrasing may differ; any difference in the actual fact, value, direction or claim is a mismatch.",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "candidate": "High blood pressure",
+      "reference": "Hypertension"
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.98,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891170-OnUBhmREE1vIo62JQJEw",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4574e-05,
+          "input_tokens": 347,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.98,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891183-lrJ309c9GlJCjd2ctKwV",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 1.4574e-05,
+          "input_tokens": 347,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}

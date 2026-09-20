@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "~typesafe/jev-latest",
+    "questions": {
+      "q": {
+        "criteria": {
+          "false": "The document contradicts it or does not mention it",
+          "true": "The document supports it, allowing for rewording and unit conversion"
+        },
+        "instructions": "Is this claim supported by the document?",
+        "type": "noul"
+      }
+    },
+    "state": {
+      "claim": "Scans can be exported as JPEG.",
+      "document": "Meridian X2 Desktop Scanner — Technical Specification\n\nThe Meridian X2 is a flatbed document scanner for small offices. It captures at up to 1200 dpi optical resolution and scans a single-sided A4 page in 3.4 seconds in colour. The automatic document feeder holds 50 sheets and supports double-sided capture in one pass. Connection is over USB-C or 2.4 GHz Wi-Fi; there is no wired Ethernet port. The unit weighs 3.2 kg and measures 448 x 300 x 91 mm with the feeder tray closed. Power draw is 18 W while scanning and under 1 W in standby. Supplied software exports to PDF, PDF/A, TIFF and PNG. The scanner ships with a 3 year limited hardware warranty covering manufacturing defects; consumables such as the feeder roller are excluded."
+    }
+  },
+  "responses": [
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.05,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891455-vk8ufJFKxCyZgW8C2W0s",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.1756e-05,
+          "input_tokens": 518,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    },
+    {
+      "body": {
+        "answers": {
+          "q": {
+            "noul": 0.04,
+            "type": "noul"
+          }
+        },
+        "id": "gen-dec-1789891569-k0GvZUXHvqu9InO7gB51",
+        "model": "typesafe/jev-1.13-20260917",
+        "provider": "TypeSafe",
+        "usage": {
+          "cost": 2.1756e-05,
+          "input_tokens": 518,
+          "output_tokens": 20
+        }
+      },
+      "status": 200
+    }
+  ]
+}
